@@ -1,14 +1,12 @@
-package scripts;
+package unidad1;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
@@ -99,7 +97,7 @@ public void CP03_AccederCtaYoutubeMusic() throws InterruptedException {
 
 //CP04: Reproducir una canción de Mi Bilioteca en Youtube Music para el usuario de prueba
 @Test
-public void CP04_AccederCtaYoutubeMusic() throws InterruptedException {
+public void CP04_ReproducirCancionYoutubeMusic() throws InterruptedException {
     //Entrar a la cuenta de Youtube Music de Lola Contreras (user de prueba)
     driver.get("https://music.youtube.com/");
     driver.findElement(By.xpath("//*[@id=\"right-content\"]/a")).click();
